@@ -1,32 +1,73 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale-1.0">
-<title>Document</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<!-- Logo icon & Navigasi bar -->
-<header class="main-header">
-  
-<!--Logo-->
-<div class="logo-icon"></div>
-
-<!--Navigasi-->
-<nav>
-<a href=""Home</a>
-<a href=""Profile</a>
-<a href=""Portfolio</a>
-<a href=""Message Us</a>
-</nav>
-</header>
-
-<!-- Konten -->
-<main></main
-
-<!-- Copyright -->
-<footer></footer>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo">
+            <h1>Hi [Nama], Welcome To Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Profile</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="headquarter">
+            <div class="container">
+                <h2>Our Headquarter</h2>
+                <div class="location">
+                    <div class="circle">
+                        <p>Jakarta</p>
+                    </div>
+                    <div class="circle">
+                        <p>Bandung</p>
+                    </div>
+                    <div class="circle">
+                        <p>Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="message">
+            <div class="container">
+                <h2>Message Us</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Created by mhazzz</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+</html>
